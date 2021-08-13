@@ -1,0 +1,109 @@
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 110px;
+}
+header .logo {
+  width: 100px;
+}
+header .logo figure {
+  width: 100%;
+  height: auto;
+}
+header .logo figure img {
+  width: 100%;
+  height: auto;
+}
+header .logo span {
+  width: 100%;
+  text-align: center;
+  display: block;
+  font-weight: bold;
+  font-size: 24px;
+}
+header nav {
+  width: calc(100% - 100px);
+  height: 60%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+header nav ul {
+  display: flex;
+  width: 80%;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+header nav ul li {
+  list-style: none;
+  font-weight: regular;
+}
+header nav ul li:nth-child(5) {
+  margin-right: 15%;
+}
+header nav ul li:last-child {
+  text-align: center;
+}
+header nav ul li:last-child a {
+  border-bottom: 2px solid black;
+  padding-top: 4px;
+  padding-bottom: 2px;
+}
+
+* {
+  font-family: "Montserrat Alternates", sans-serif;
+  color: #000;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+figure {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.title {
+  font-family: "Philosopher", sans-serif;
+}
+
+.main-area {
+  margin: 0 100px;
+}
+
+.landing-wrapper {
+  width: 100%;
+  height: 130vh;
+  background: linear-gradient(90deg, #d9e4f4 0%, #c6cbd7 48%, #b9c3d9 100%);
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+.landing-wrapper .bg-girl {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+}
+.landing-wrapper .bg-girl img {
+  width: 100%;
+  height: auto;
+}
+
+body {
+  background-color: #c1cffd;
+}
+
+/*# sourceMappingURL=styles.css.map */
