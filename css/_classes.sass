@@ -1,0 +1,59 @@
+.classes
+    display: grid
+    justify-content: center
+
+    h2
+        width: 100%
+        text-align: center
+        margin-top: 200px
+        margin-bottom: 50px
+    
+    .class
+        display: grid
+        grid-template-columns: 1fr 1fr
+        column-gap: 100px
+        width: 90%
+        margin: 0 auto
+        margin-top: 80px
+
+
+        .details
+
+            h3
+                font-weight: 400
+                font-size: 22px
+
+        .images
+            position: relative
+
+            figure
+                width: 100%
+                height: auto
+                border-radius: 30px
+                overflow: hidden
+
+                img
+                    width: 100%
+                    height: auto
+
+                &.bg-image
+                    opacity: 0.4
+
+                &:nth-child(1)
+                    margin-left: 40px
+
+
+                &:nth-child(2)
+                    position: absolute
+                    z-index: -1
+                    top: -40px
+
+        &.odd
+
+            grid-template-areas: "details images"
+
+            .images
+                grid-area: images
+
+            .details
+                grid-area: details

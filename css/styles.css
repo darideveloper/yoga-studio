@@ -208,6 +208,62 @@ h2 {
   height: 50%;
 }
 
+.classes {
+  display: grid;
+  justify-content: center;
+}
+.classes h2 {
+  width: 100%;
+  text-align: center;
+  margin-top: 200px;
+  margin-bottom: 50px;
+}
+.classes .class {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 100px;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 80px;
+}
+.classes .class .details h3 {
+  font-weight: 400;
+  font-size: 22px;
+}
+.classes .class .images {
+  position: relative;
+}
+.classes .class .images figure {
+  width: 100%;
+  height: auto;
+  border-radius: 30px;
+  overflow: hidden;
+}
+.classes .class .images figure img {
+  width: 100%;
+  height: auto;
+}
+.classes .class .images figure.bg-image {
+  opacity: 0.4;
+}
+.classes .class .images figure:nth-child(1) {
+  margin-left: 40px;
+}
+.classes .class .images figure:nth-child(2) {
+  position: absolute;
+  z-index: -1;
+  top: -40px;
+}
+.classes .class.odd {
+  grid-template-areas: "details images";
+}
+.classes .class.odd .images {
+  grid-area: images;
+}
+.classes .class.odd .details {
+  grid-area: details;
+}
+
 body {
   background-color: #c1cffd;
 }
