@@ -73,6 +73,10 @@ a {
   color: #000;
 }
 
+h2 {
+  font-size: 45px;
+}
+
 .title {
   font-family: "Philosopher", sans-serif;
 }
@@ -143,6 +147,7 @@ a {
   margin: 0;
   margin-top: 15px;
   font-weight: 400;
+  font-size: 24px;
 }
 .landing-wrapper .landing .buttons-wrapper {
   width: 70%;
@@ -163,6 +168,44 @@ a {
 }
 .landing-wrapper .landing .buttons-wrapper p {
   font-size: 24px;
+}
+
+.about-us {
+  margin-top: calc(130vh - 110px);
+}
+.about-us h2 {
+  width: 100%;
+  text-align: center;
+  padding-top: 100px;
+  padding-block-end: 30px;
+}
+.about-us .icons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 0 100px;
+}
+.about-us .icons .icon {
+  text-align: center;
+}
+.about-us .icons .icon figure {
+  margin: 0 auto;
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  background-color: #9dafea;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.about-us .icons .icon figure img {
+  width: auto;
+  height: 60%;
+}
+.about-us .icons .icon.experience img {
+  height: 40%;
+}
+.about-us .icons .icon.location img {
+  height: 50%;
 }
 
 body {

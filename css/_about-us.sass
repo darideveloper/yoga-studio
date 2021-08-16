@@ -1,0 +1,44 @@
+@use 'vars'
+    
+.about-us
+    margin-top: calc(130vh - 110px)
+
+    h2
+        width: 100%
+        text-align: center
+        padding-top: 100px
+        padding-block-end: 30px
+    
+    .icons
+        display: grid
+        grid-template-columns: repeat(4, 1fr)
+        margin: 0 100px
+
+        .icon
+            text-align: center
+
+            figure
+
+                margin: 0 auto
+                width: 130px
+                height: 130px
+                border-radius: 50%
+                background-color: vars.$color-blue
+                display: flex
+                align-items: center
+                justify-content: center
+
+                img
+                    width: auto
+                    height: 60%
+                    
+            // Icons size
+            &.experience
+
+                img 
+                    height: 40%
+            
+            &.location
+
+                img 
+                    height: 50%
