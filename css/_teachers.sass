@@ -1,0 +1,37 @@
+.teachers
+    h2
+        margin-top: 180px
+        width: 100%
+        text-align: center
+
+    .teachers-wrapper
+        width: 100%
+        display: grid
+        grid-template-columns: repeat(4, 1fr)
+        margin-top: 50px
+
+        .teacher
+            text-align: center
+
+            figure
+                width: 210px
+                height: 210px
+                border-radius: 50%
+                overflow: hidden
+                margin: 0 auto
+
+                img
+                    width: 100%
+                    height: auto
+            small
+                display: block
+                position: absolute
+                z-index: 2
+                bottom: 0
+
+            &:hover
+                small
+                    display: block
+                    
+
+
