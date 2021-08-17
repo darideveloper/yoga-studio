@@ -300,6 +300,35 @@ h3 {
   display: block;
 }
 
+.wallpaper {
+  width: 100%;
+  margin: 0;
+  margin-top: 100px;
+  background-color: #a8aec9;
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.wallpaper h3 {
+  line-height: 50px;
+  text-align: center;
+  width: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 300px;
+  font-size: 28px;
+}
+.wallpaper figure {
+  width: 90%;
+  height: auto;
+}
+.wallpaper figure img {
+  width: 100%;
+  height: auto;
+}
+
 body {
   background-color: #c1cffd;
 }
