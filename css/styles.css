@@ -131,7 +131,7 @@ h3 {
   width: 350px;
   height: 350px;
   border-radius: 50%;
-  border: 10px solid #c1cffd;
+  border: 10px solid #dae6f8;
 }
 .landing-wrapper .landing .titles-wrapper {
   width: 75%;
@@ -169,7 +169,7 @@ h3 {
   padding: 12px 70px;
   margin-right: 20px;
   font-size: 24px;
-  background-color: #9dafea;
+  background-color: #a1b5eb;
 }
 .landing-wrapper .landing .buttons-wrapper p {
   font-size: 24px;
@@ -197,7 +197,7 @@ h3 {
   width: 130px;
   height: 130px;
   border-radius: 50%;
-  background-color: #9dafea;
+  background-color: #a1b5eb;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -304,7 +304,7 @@ h3 {
   width: 100%;
   margin: 0;
   margin-top: 100px;
-  background-color: #a8aec9;
+  background-color: #d3d9e7;
   position: relative;
   display: flex;
   justify-content: flex-end;
@@ -362,7 +362,7 @@ h3 {
 }
 .pricing .cards .card button {
   border: none;
-  background-color: #9dafea;
+  background-color: #a1b5eb;
   border-radius: 20px;
   line-height: 24px;
   padding: 10px 65px;
@@ -373,8 +373,50 @@ h3 {
   font-weight: 400;
 }
 
+.sing-up {
+  margin: 0;
+  margin-top: 150px;
+  background-color: #c1cffe;
+  width: 100%;
+  padding: 80px 0;
+}
+.sing-up h2, .sing-up h3 {
+  width: 100%;
+  text-align: center;
+}
+.sing-up h2 {
+  font-weight: 400;
+  font-size: 40px;
+}
+.sing-up form {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+.sing-up form fieldset {
+  border: none;
+  margin-left: -100px;
+}
+.sing-up form fieldset input {
+  font-size: 28px;
+  width: 200px;
+  border: none;
+  border-radius: 25px;
+  margin-left: 100px;
+}
+.sing-up form fieldset input[type=text] {
+  padding: 10px 30px;
+}
+.sing-up form fieldset input[type=submit] {
+  height: 55px;
+  width: 260px;
+  background-color: #a1b5eb;
+}
+
 body {
-  background-color: #c1cffd;
+  background-color: #dae6f8;
 }
 
 /*# sourceMappingURL=styles.css.map */
