@@ -1,0 +1,44 @@
+@use "vars"
+    
+.pricing
+    margin-top: 100px
+
+    h2, h3
+        width: 100%
+        text-align: center
+
+    .cards
+        display: grid
+        grid-template-columns: repeat(3, 1fr)
+        column-gap: 150px
+        margin-bottom: 50px
+
+        .card 
+            text-align: center
+            background-color: vars.$color-white
+            border-radius: 60px
+            overflow: hidden
+            padding: 40px
+
+            h3
+                font-size: 24px
+                font-weight: bold
+
+                &:first-child
+                    margin-top: 0
+
+            p 
+                font-size: 22px
+                line-height: 35px
+
+            button
+                border: none 
+                background-color: vars.$color-blue
+                border-radius: 20px
+                line-height: 24px
+                padding: 10px 65px
+
+                h3 
+                    margin: 0
+                    padding: 0
+                    font-weight: 400

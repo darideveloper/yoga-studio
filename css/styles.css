@@ -329,6 +329,50 @@ h3 {
   height: auto;
 }
 
+.pricing {
+  margin-top: 100px;
+}
+.pricing h2, .pricing h3 {
+  width: 100%;
+  text-align: center;
+}
+.pricing .cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 150px;
+  margin-bottom: 50px;
+}
+.pricing .cards .card {
+  text-align: center;
+  background-color: #fff;
+  border-radius: 60px;
+  overflow: hidden;
+  padding: 40px;
+}
+.pricing .cards .card h3 {
+  font-size: 24px;
+  font-weight: bold;
+}
+.pricing .cards .card h3:first-child {
+  margin-top: 0;
+}
+.pricing .cards .card p {
+  font-size: 22px;
+  line-height: 35px;
+}
+.pricing .cards .card button {
+  border: none;
+  background-color: #9dafea;
+  border-radius: 20px;
+  line-height: 24px;
+  padding: 10px 65px;
+}
+.pricing .cards .card button h3 {
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+}
+
 body {
   background-color: #c1cffd;
 }
