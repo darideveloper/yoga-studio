@@ -552,6 +552,41 @@ h3 {
   margin-right: 100px;
 }
 
+footer {
+  padding: 50px 0;
+}
+footer .socials {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+footer .socials .left .icon {
+  font-size: 20px;
+}
+footer .socials .left a {
+  line-height: 20px;
+}
+footer .socials .left div {
+  margin: 15px;
+}
+footer .socials .right {
+  display: flex;
+}
+footer .socials .right div {
+  font-size: 25px;
+  margin: 5px;
+}
+footer small {
+  width: 100%;
+  text-align: center;
+  display: block;
+  font-size: 12px;
+}
+footer small a {
+  font-weight: bold;
+}
+
 body {
   background-color: #dae6f8;
 }
