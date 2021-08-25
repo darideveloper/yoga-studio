@@ -22,6 +22,10 @@ header .logo span {
   font-weight: bold;
   font-size: 24px;
 }
+header .icon-menu {
+  display: none;
+  font-size: 50px;
+}
 header nav {
   width: calc(100% - 100px);
   height: 60%;
@@ -51,6 +55,48 @@ header nav ul li:last-child a {
   border-bottom: 2px solid black;
   padding-top: 4px;
   padding-bottom: 2px;
+}
+@media screen and (max-width: 950px) {
+  header {
+    display: block;
+    height: auto;
+  }
+  header .logos-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 20px;
+    margin-bottom: 20px;
+  }
+  header .logos-wrapper .logo {
+    width: 70px;
+  }
+  header .logos-wrapper .icon-menu {
+    display: block;
+  }
+  header nav {
+    width: 100%;
+    background-color: #c1cffe;
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin-top: 100px;
+    height: calc(100vh - 100px);
+    opacity: 0.95;
+    display: flex;
+    align-items: center;
+  }
+  header nav ul {
+    width: 100%;
+    display: block;
+    text-align: center;
+  }
+  header nav ul li, header nav ul li:nth-child(5) {
+    margin: 0;
+    padding: 0;
+    font-size: 35px;
+    margin: 5vh auto;
+  }
 }
 
 * {
@@ -88,7 +134,8 @@ h3 {
 }
 
 .main-area {
-  margin: 0 100px;
+  margin: 0 auto;
+  max-width: 1400px;
 }
 
 .landing-wrapper {
@@ -100,13 +147,15 @@ h3 {
   left: 0;
   top: 0;
   z-index: -2;
+  overflow: hidden;
 }
 .landing-wrapper .bg-girl {
   position: absolute;
-  bottom: 0;
-  left: 0;
+  top: 0;
+  right: 0;
   width: 100%;
   height: auto;
+  margin-top: 100px;
 }
 .landing-wrapper .bg-girl img {
   width: 100%;
@@ -589,6 +638,10 @@ footer small a {
 
 body {
   background-color: #dae6f8;
+}
+
+.hide {
+  display: none;
 }
 
 /*# sourceMappingURL=styles.css.map */
