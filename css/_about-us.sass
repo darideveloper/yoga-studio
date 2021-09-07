@@ -1,7 +1,7 @@
 @use 'vars'
     
 .about-us
-    margin-top: calc(130vh - 110px)
+    margin-top: calc(100vw / 1.916)
 
     h2
         width: 100%
@@ -42,3 +42,32 @@
 
                 img 
                     height: 50%
+
+    @media screen and (max-width: 950px)
+
+        &
+            margin-top: 105vh
+
+        h2
+            padding-top: 0 
+
+        .icons
+            display: grid
+            grid-template-columns: repeat(2, 1fr)
+            grid-template-rows: repeat(2, 1fr)
+            margin: 0 10px
+
+            .icon
+
+                figure
+                    width: 30vw
+                    height: 30vw
+
+                p
+                    font-size: 4vw
+
+        
+        @media screen and (max-height: 100vw)
+
+            &
+                margin-top: 175vh
