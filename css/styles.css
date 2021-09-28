@@ -500,14 +500,22 @@ h3 {
 }
 
 .wallpaper {
-  width: 100%;
+  max-width: 100vw;
+  width: 100vw;
+  height: auto;
   margin: 0;
+  padding: 0;
   margin-top: 100px;
   background-color: #d3d9e7;
   position: relative;
   display: flex;
   justify-content: flex-end;
   align-items: center;
+}
+@media (max-width: 500px) {
+  .wallpaper {
+    display: none;
+  }
 }
 .wallpaper h3 {
   line-height: 50px;
@@ -516,11 +524,12 @@ h3 {
   position: absolute;
   top: 0;
   left: 0;
-  margin-top: 300px;
-  font-size: 28px;
+  margin-top: 15vw;
+  font-size: 2vw;
+  line-height: 3vw;
 }
 .wallpaper figure {
-  width: 90%;
+  width: 80%;
   height: auto;
 }
 .wallpaper figure img {
@@ -787,6 +796,7 @@ footer small a {
 
 body {
   background-color: #dae6f8;
+  overflow-x: hidden;
 }
 
 .hide {
