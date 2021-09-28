@@ -410,6 +410,13 @@ h3 {
   margin: 0 auto;
   margin-top: 80px;
 }
+@media screen and (max-width: 950px) {
+  .classes .class {
+    grid-template-columns: 1fr;
+    margin-top: 0;
+    margin-bottom: 160px;
+  }
+}
 .classes .class .images {
   position: relative;
 }
@@ -434,14 +441,16 @@ h3 {
   z-index: -1;
   top: -40px;
 }
-.classes .class.odd {
-  grid-template-areas: "details images";
-}
-.classes .class.odd .images {
-  grid-area: images;
-}
-.classes .class.odd .details {
-  grid-area: details;
+@media screen and (min-width: 950px) {
+  .classes .class.odd {
+    grid-template-areas: "details images";
+  }
+  .classes .class.odd .images {
+    grid-area: images;
+  }
+  .classes .class.odd .details {
+    grid-area: details;
+  }
 }
 
 .teachers h2 {

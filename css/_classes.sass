@@ -16,6 +16,12 @@
         margin: 0 auto
         margin-top: 80px
 
+        @media screen and (max-width: 950px)
+            grid-template-columns: 1fr
+            margin-top: 0
+            margin-bottom: 160px
+
+
         .images
             position: relative
 
@@ -43,10 +49,12 @@
 
         &.odd
 
-            grid-template-areas: "details images"
+            @media screen and (min-width: 950px)
+                grid-template-areas: "details images"
 
-            .images
-                grid-area: images
 
-            .details
-                grid-area: details
+                .images
+                    grid-area: images
+
+                .details
+                    grid-area: details
