@@ -768,6 +768,37 @@ h3 {
 .reviews .cards .card-wrapper .card .p-wrapper p {
   width: 100%;
 }
+@media screen and (max-width: 1400px) {
+  .reviews .cards {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .reviews .cards .card-wrapper {
+    margin: 0 10px;
+    margin-top: 100px;
+  }
+}
+@media screen and (max-width: 950px) {
+  .reviews .cards {
+    display: block;
+  }
+  .reviews .cards .card-wrapper, .reviews .cards .card-wrapper:nth-child(2) {
+    width: 40%;
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .reviews .cards .card-wrapper, .reviews .cards .card-wrapper:nth-child(2) {
+    width: 60%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .reviews .cards .card-wrapper, .reviews .cards .card-wrapper:nth-child(2) {
+    width: 80%;
+  }
+}
 
 .contact {
   margin-top: 150px;
