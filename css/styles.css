@@ -813,7 +813,8 @@ h3 {
 }
 .contact .map-wrapper .map {
   width: 70%;
-  height: 70vh;
+  height: 500px;
+  max-height: 50vh;
   border-radius: 30px;
   overflow: hidden;
 }
@@ -845,6 +846,34 @@ h3 {
 .contact .map-wrapper .schedule-wrapper .schedule h3 {
   margin-left: 100px;
   margin-right: 100px;
+}
+@media screen and (max-width: 1200px) {
+  .contact .map-wrapper .map {
+    width: 90%;
+  }
+  .contact .map-wrapper .schedule-wrapper .schedule h3 {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+@media screen and (max-width: 750px) {
+  .contact .map-wrapper .map {
+    width: 100%;
+  }
+  .contact .map-wrapper .schedule-wrapper {
+    position: initial;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .contact .map-wrapper .schedule-wrapper .schedule {
+    width: 100%;
+  }
+  .contact .map-wrapper .schedule-wrapper .schedule h3 {
+    width: 100%;
+    text-align: center;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
 }
 
 footer {
