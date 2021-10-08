@@ -3,6 +3,8 @@ header {
   align-items: center;
   justify-content: space-between;
   height: 110px;
+  position: relative;
+  z-index: 1;
 }
 header .logo {
   width: 100px;
@@ -157,7 +159,7 @@ h3 {
   position: absolute;
   left: 0;
   top: 0;
-  z-index: -2;
+  z-index: 0;
   overflow: hidden;
 }
 .landing-wrapper .bg-girl {
@@ -569,14 +571,15 @@ h3 {
   font-size: 22px;
   line-height: 35px;
 }
-.pricing .cards .card button {
+.pricing .cards .card a {
   border: none;
   background-color: #a1b5eb;
   border-radius: 20px;
   line-height: 24px;
   padding: 10px 65px;
+  display: block;
 }
-.pricing .cards .card button h3 {
+.pricing .cards .card a h3 {
   margin: 0;
   padding: 0;
   font-weight: 400;
