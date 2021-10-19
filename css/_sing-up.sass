@@ -27,7 +27,7 @@
             border: none
             margin-left: -100px
 
-            input
+            input, #submit
                 font-size: 28px
                 width: 200px
                 border: none
@@ -35,19 +35,22 @@
                 margin-left: 100px
 
 
-            input[type="text"]
+            input[type="text"], input[type="number"]
                 padding: 10px 30px
 
-            input[type="submit"]
+            #submit
                 height: 55px
                 width: 260px
                 background-color: vars.$color-blue
+                text-align: center
+                line-height: 55px
+                display: inline-block
     
     @media screen and (max-width: 1100px)
         form fieldset
             margin-left: -20px
             
-            input 
+            input, #submit 
                 margin-left: 20px
 
     @media screen and (max-width: 970px)
@@ -55,13 +58,13 @@
         form fieldset 
             width: 100%
 
-            input, input[type=submit]
+            input, #submit
                 display: block
                 width: 70%
                 margin: 0 auto
                 margin-bottom: 20px
 
-            input[type=submit]
+            #submit
                 margin-top: 50px
 
 

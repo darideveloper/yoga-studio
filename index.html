@@ -280,11 +280,11 @@
             <br>
             in yoga and answer all questions
         </h3>
-        <form action="https://github.com/DariHernandez/yoga-studio">
+        <form action=".#sing-up?thanks", method="post">
             <fieldset>
-                <input name="name" type="text", placeholder="Name">
-                <input name="phone" type="text", placeholder="Phone">
-                <input type="submit" value="Sign Up">
+                <input name="name" type="text", placeholder="Name" required>
+                <input name="phone" type="number", placeholder="Phone" required placeholder="(Area code) Number" patern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                <button id="submit">Sign Up</button>
             </fieldset>
         </form>
     </div>
@@ -424,5 +424,6 @@
         </div>
     </footer>
     <script src="code/index.js"></script>
+    <script src="code/sign-up.js"></script>
 </body>
 </html>
