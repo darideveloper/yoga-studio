@@ -977,6 +977,16 @@ footer.main-area small a {
   margin-right: 10px;
 }
 
+@media screen and (max-width: 650px) {
+  .modal.thanks .wrapper {
+    width: 100%;
+  }
+  .modal.thanks .wrapper h2, .modal.thanks .wrapper h3 {
+    margin-right: 0;
+    margin-left: 0;
+    width: 100%;
+  }
+}
 .modal.gallery {
   margin-top: 0;
 }
