@@ -1,10 +1,10 @@
-modal_g = document.querySelector (".modal.gallery")
-modal_image = document.querySelector (".modal.gallery img")
-modal_figure = document.querySelector (".modal.gallery figure")
-close_area = document.querySelector (".modal.gallery .wrapper")
+var modal_g = document.querySelector (".modal.gallery")
+var modal_image = document.querySelector (".modal.gallery img")
+var modal_figure = document.querySelector (".modal.gallery figure")
+var close_area = document.querySelector (".modal.gallery .wrapper")
 
-height = window.screen.height
-width = window.screen.width
+var height = window.screen.height
+var width = window.screen.width
 
 function togle_modal_gallery () {
     modal_g.classList.toggle ("hide")

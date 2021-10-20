@@ -1,6 +1,6 @@
 
-modal_t = document.querySelector (".modal.thanks")
-close_button = document.querySelector (".modal.thanks .close")
+var modal_t = document.querySelector (".modal.thanks")
+var close_button = document.querySelector (".modal.thanks .close")
 
 function togle_modal_thanks () {
     modal_t.classList.toggle ("hide")
