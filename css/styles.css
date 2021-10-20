@@ -941,7 +941,7 @@ footer.main-area small a {
   }
 }
 
-.modal.thanks {
+.modal {
   width: 100vw;
   height: 100vh;
   position: fixed;
@@ -953,9 +953,12 @@ footer.main-area small a {
   align-items: center;
   justify-content: center;
 }
+.modal .wrapper {
+  text-align: center;
+}
+
 .modal.thanks .wrapper {
   background-color: #fff;
-  text-align: center;
 }
 .modal.thanks .wrapper h2 {
   margin: 0 100px;
@@ -972,6 +975,20 @@ footer.main-area small a {
 }
 .modal.thanks .wrapper .close svg {
   margin-right: 10px;
+}
+
+.modal.gallery {
+  margin-top: 0;
+}
+.modal.gallery .wrapper figure {
+  height: 90vh;
+  width: auto;
+  border-radius: 50px;
+  overflow: hidden;
+}
+.modal.gallery .wrapper figure img {
+  height: 100%;
+  width: 100%;
 }
 
 body {

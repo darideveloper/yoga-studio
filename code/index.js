@@ -5,21 +5,17 @@ function hide_show (selector="", toggle=false, hide=false, show=false) {
     
     elem = document.querySelector (selector)
 
-    console.log (toggle, hide, show)
 
     if (toggle) {
         elem.classList.toggle("hide")
-        console.log ("toggle")
     }
 
     if (hide) {
         elem.classList.add("hide")
-        console.log ("hide")
     }
 
     if (show) {
         elem.classList.remove("hide")
-        console.log ("show")
     }
 }
 
@@ -29,13 +25,11 @@ function responsive () {
     // Hide / Show burger menu with media query
     if (window.matchMedia("(max-width: 950px)").matches) {
         hide_show (selector_nav, false, true, false)
-        console.log ("tablet")
         
     }
     
     if (window.matchMedia("(min-width: 951px)").matches) {
         hide_show (selector_nav, false, false, true)
-        console.log("desktop")
     }
 }
 
