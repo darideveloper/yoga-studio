@@ -177,12 +177,19 @@ img {
 }
 .landing-wrapper .bg-girl {
   position: absolute;
-  top: 0;
+  top: 100px;
   right: 0;
   width: 100%;
   height: auto;
   margin-top: 7vw;
   z-index: 0;
+  animation-name: girl;
+  animation-duration: 1.6s;
+  animation-delay: 1s;
+  animation-timing-function: ease;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+  opacity: 0;
 }
 .landing-wrapper .bg-girl img {
   width: 100%;
@@ -205,7 +212,7 @@ img {
 }
 .landing-wrapper .landing .title-wrapper .circle {
   position: absolute;
-  left: 0;
+  left: 100vw;
   top: -65%;
   width: 23vw;
   height: 23vw;
@@ -214,6 +221,12 @@ img {
   margin-left: 6vw;
   opacity: 0.5;
   z-index: -1;
+  animation-name: circle;
+  animation-duration: 1.6s;
+  animation-delay: 1.5s;
+  animation-timing-function: ease;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
 }
 .landing-wrapper .landing .title-wrapper h1 {
   margin: 0;
@@ -227,6 +240,15 @@ img {
   font-weight: 400;
   font-size: 1.5vw;
   margin-left: 200px;
+}
+.landing-wrapper .landing .title-wrapper h1, .landing-wrapper .landing .title-wrapper h2 {
+  opacity: 0;
+  animation-name: text;
+  animation-duration: 1.2s;
+  animation-delay: 2s;
+  animation-timing-function: ease;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
 }
 .landing-wrapper .landing .buttons-wrapper {
   width: 100%;
@@ -282,7 +304,7 @@ img {
   }
   .landing-wrapper .landing .title-wrapper .circle {
     position: absolute;
-    left: 0;
+    left: 100vw;
     top: 0;
     width: 32vh;
     height: 32vh;
@@ -343,6 +365,31 @@ img {
   }
 }
 
+@keyframes girl {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    top: 0;
+  }
+}
+@keyframes circle {
+  0% {
+    left: 50vw;
+  }
+  100% {
+    left: 0;
+  }
+}
+@keyframes text {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .about-us {
   margin-top: calc(100vw / 1.916);
 }
