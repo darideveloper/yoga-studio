@@ -406,6 +406,28 @@ img {
 }
 .about-us .icons .icon {
   text-align: center;
+  opacity: 0;
+  transform: scale(1.2);
+  animation-duration: 1.5s;
+  animation-timing-function: ease;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+}
+.about-us .icons .icon:nth-child(1) {
+  animation-name: icon1;
+  animation-delay: 0.2s;
+}
+.about-us .icons .icon:nth-child(2) {
+  animation-name: icon2;
+  animation-delay: 0.4s;
+}
+.about-us .icons .icon:nth-child(3) {
+  animation-name: icon3;
+  animation-delay: 0.6s;
+}
+.about-us .icons .icon:nth-child(4) {
+  animation-name: icon4;
+  animation-delay: 0.8s;
 }
 .about-us .icons .icon figure {
   margin: 0 auto;
@@ -454,6 +476,46 @@ img {
   }
 }
 
+@keyframes icon1 {
+  0% {
+    opacity: 0;
+    transform: scale(1.2);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+@keyframes icon2 {
+  0% {
+    opacity: 0;
+    transform: scale(1.2);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+@keyframes icon3 {
+  0% {
+    opacity: 0;
+    transform: scale(1.2);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+@keyframes icon4 {
+  0% {
+    opacity: 0;
+    transform: scale(1.2);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
 .classes {
   display: grid;
   justify-content: center;
